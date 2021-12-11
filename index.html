@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Rock Paper Scissors is a classic game to play when you're bored or need to make a life-changing decision."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main>
+      <section class="section rel">
+        <button class="try-again">Try again</button>
+        <div class="container grid">
+          <h1 class="heading">Rock・Paper・Scissors</h1>
+          <p class="game-description">
+            A good ol' classic of a zero-sum game against the almighty
+            Computer.<br />
+            First to 5 points wins!
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container grid grid--3-cols">
+          <button class="btn-choice rock">
+            <img src="img/rocks.png" class="choice-icon" alt="Rocks" />
+          </button>
+          <button class="btn-choice paper">
+            <img src="img/paper.png" class="choice-icon" alt="Paper" />
+          </button>
+          <button class="btn-choice scissors">
+            <img src="img/scissors.png" class="choice-icon" alt="Scissors" />
+          </button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container grid grid--2-cols">
+          <p class="result">Come on, make your choice!</p>
+          <div class="scores grid sml">
+            <img src="img/winning.png" class="result-icon" alt="Winner's Trophy" />
+            <p class="player">Player</p>
+            <p class="player-score">0</p>
+          </div>
+          <div class="scores grid sml">
+            <img src="img/loser.png" class="result-icon" alt="Sad loser" />
+            <p class="player">Computer</p>
+            <p class="computer-score">0</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
