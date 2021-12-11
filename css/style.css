@@ -23,6 +23,10 @@ body {
   padding: 0 3.2rem;
 }
 
+.container.small {
+  max-width: 75rem;
+}
+
 .section {
   padding-top: 3.6rem;
   padding-bottom: 3.6rem;
@@ -38,15 +42,15 @@ body {
 
 .sml {
   row-gap: 2.8rem;
-  align-items: end;
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--3-cols.smaller-gap {
+  column-gap: 2.6rem;
 }
 
 /* DESCRIPTION */
@@ -91,6 +95,11 @@ body {
 }
 
 /* SCORE */
+.result {
+  grid-column: 1 / -1;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
 .player {
   text-transform: uppercase;
   color: #343a40;
@@ -111,24 +120,13 @@ body {
   opacity: 0;
 }
 
-.result {
-  grid-column: 1 / -1;
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-
 .visible.result-icon {
   opacity: 1;
   transition: all 0.5s ease-in;
 }
 
-.rel {
-  position: relative;
-}
-
 .try-again {
   border: none;
-  position: absolute;
   font-size: 1.8rem;
   text-transform: uppercase;
   padding: 1.2rem 2.4rem;
@@ -137,8 +135,6 @@ body {
   color: #fff;
   font-weight: 600;
   transition: all 0.4s;
-  left: 45%;
-  top: 37%;
   opacity: 0;
 }
 
