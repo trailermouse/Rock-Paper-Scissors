@@ -1,0 +1,62 @@
+/* BELOW 1072 PX */
+@media (max-width: 67em) {
+  .try-again {
+    left: 43%;
+  }
+}
+
+/* BELOW 848 PX */
+@media (max-width: 53em) {
+  .try-again {
+    left: 41%;
+  }
+}
+
+/* BELOW 640 PX */
+@media (max-width: 40em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+
+  .game-description {
+    font-size: 1.6rem;
+  }
+
+  .choice-icon {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .result {
+    font-size: 2.8rem;
+  }
+
+  .try-again {
+    font-size: 1.6rem;
+  }
+}
+
+/* BELOW 528 PX */
+@media (max-width: 33em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    row-gap: 3.6rem;
+  }
+
+  .try-again {
+    left: 40%;
+    top: 33%;
+  }
+
+  .choice-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+}

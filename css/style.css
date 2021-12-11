@@ -50,36 +50,6 @@ body {
 }
 
 /* DESCRIPTION */
-.rel {
-  position: relative;
-}
-
-.try-again {
-  border: none;
-  position: absolute;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  background-color: #74b816;
-  color: #fff;
-  font-weight: 600;
-  transition: all 0.4s;
-  left: 45%;
-  top: 37%;
-  opacity: 0;
-}
-
-.try-again:hover {
-  background-color: #5c940d;
-}
-
-.try-again.visible {
-  opacity: 1;
-  transition: all 0.5s ease-in;
-  cursor: pointer;
-}
-
 .heading {
   font-size: 4.8rem;
   font-weight: 600;
@@ -149,4 +119,34 @@ body {
 .visible.result-icon {
   opacity: 1;
   transition: all 0.5s ease-in;
+}
+
+.rel {
+  position: relative;
+}
+
+.try-again {
+  border: none;
+  position: absolute;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #74b816;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.4s;
+  left: 45%;
+  top: 37%;
+  opacity: 0;
+}
+
+.try-again:hover {
+  background-color: #5c940d;
+}
+
+.try-again.visible {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
