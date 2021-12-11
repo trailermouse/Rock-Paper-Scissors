@@ -2,7 +2,7 @@
 
 let choiceButtons = document.querySelectorAll(".btn-choice");
 let resultIcons = document.querySelectorAll(".result-icon");
-console.log(resultIcons);
+let playAgain = document.querySelector(".try-again");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -57,15 +57,17 @@ function checkScore() {
       result.textContent = "Congratulations! You're the winner, baby!";
       result.style.color = "#5c940d";
       resultIcons.forEach((icon) => {
-        icon.classList.add('front');
+        icon.classList.add('visible');
       });
+      playAgain.classList.add('visible');
     } else {
       result.textContent = "You've lost. Better luck next time!";
       result.style.color = "#d9480f";
       resultIcons[0].setAttribute('src', 'img/loser.png');
-      resultIcons[0].classList.add('front');
+      resultIcons[0].classList.add('visible');
       resultIcons[1].setAttribute('src', 'img/winning.png');
-      resultIcons[1].classList.add('front')
+      resultIcons[1].classList.add('visible');
+      playAgain.classList.add('visible');
     }
   }
 }
@@ -75,6 +77,6 @@ function playGame(playerSelection, computerSelection) {
   checkScore();
 }
 
-document.querySelector(".try-again").addEventListener("click", () => {
+playAgain.addEventListener("click", () => {
   window.location.reload();
 });
